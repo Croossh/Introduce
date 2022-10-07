@@ -1,29 +1,18 @@
-const topBtn = document.querySelector("#scrollTop");
+const triggerMargin = 350;
+const elementList = document.querySelectorAll(".scroll");
 
-topBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+const scrollFunc = function () {
+  for (const element of elementList) {
+    if (!element.classList.contains("show")) {
+      if (
+        window.innerHeight >=
+        element.getBoundingClientRect().top + triggerMargin
+      ) {
+        element.classList.add("show");
+      }
+    }
+  }
+};
 
-// 네브바 영역 이동
-const aTags = document.querySelectorAll("header a");
-
-aTags[0].addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-const getHere = document.getElementById("here");
-aTags[1].addEventListener("click", () => {
-  window.scrollTo({ top: getHere.offsetTop, behavior: "smooth" });
-});
-
-// for (let i = 0; i < aTags.length; i++) {
-//   aTags.onclick = function (e) {
-//     e.preventDefault();
-//     let target = document.querySelector(this.getAttribute("href"));
-
-//     window.scrollTo({
-//       top: target.offsetTop,
-//       behavior: "smooth",
-//     });
-//   };
-// }
+window.addEventListener("load", scrollFunc);
+window.addEventListener("scroll", scrollFunc);

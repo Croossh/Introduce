@@ -2,40 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="index.css" />
-    <title>Let's Do This!</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <button id="scrollTop">TOP</button>
-    <div id="top"></div>
-    <header id="header">
-      <nav id="navbar">
-        <ul>
-          <li><a href="#top">프로필</a></li>
-          <li><a href="#here">상세내용</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main id="main">
-      <article id="intro">
-        <!-- 사진메인 아이콘 -->
-        <section id="picture">
-          <h1 class="nameH1">박 우 찬</h1>
-          <div class="frame">
-            <img class="chanImg" src="./image/박우찬11.jpg" alt="박우찬" />
-          </div>
-          <h3>예비 프론트엔드 개발자</h3>
-          <div class="page">
-            <a href="https://croossh103.tistory.com/"
-              ><img src="./image/티스토리.png"
-            /></a>
-            <a href="https://github.com/Croossh"
-              ><img src="./image/github.png"
-            /></a>
-            <a href=""><img src="./image/talk.png" /></a>
+    <!-- <a href='https://.pngtree.com/so/후광'>후광 png에서 .pngtree.com/</a> -->
+    <div id="background">
+      <header></header>
+      <main id="main">
+        <!-- section: 메인 프로필 영역 -->
+        <section id="profile_area" class="scroll">
+          <!-- 사진 영역 -->
+          <div id="selfie_area">
+            <h1>박 우 찬</h1>
+            <div class="img_container">
+              <img src="./image/me.png" />
+            </div>
+            <h3>Front-End Developer</h3>
+            <div class="go_img">
+              <a href=""><img src="./image/티스토리.png" /></a>
+              <a href=""><img src="./image/github.png" /></a>
+              <a href=""><img src="./image/talk.png" /></a>
+            </div>
           </div>
           <div id="introduce">
             <h1>자기 소개</h1>
@@ -50,52 +39,125 @@
               오지않습니다.
             </p>
           </div>
-          <div id="here"></div>
+          <!-- 기본정보 및 스택 영역 -->
+          <div id="intro_area" class="scroll">
+            <div class="infoShow_area">
+              <h1>👨‍💻 Infomation</h1>
+              <p>Add. - 경기도 성남시 분당구</p>
+              <p>Tel. - 010-4939-0237</p>
+              <p>E-mail - <a>dnchks08@gmail.com</a></p>
+            </div>
+            <div class="infoShow_area">
+              <h1>🚀 기술 스택</h1>
+              <div>
+                <img
+                  src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                />
+                <img
+                  src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                />
+                <img
+                  src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                />
+                <img
+                  src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                />
+                <img
+                  src="https://img.shields.io/badge/typescript-339AF0?style=for-the-badge&logo=typescript&logoColor=black"
+                />
+                <img
+                  src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"
+                />
+                <img
+                  src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white"
+                />
+                <img
+                  src="https://img.shields.io/badge/mongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white"
+                />
+                <img
+                  src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"
+                />
+              </div>
+            </div>
+            <div class="infoShow_area">
+              <h1>🎓 Career & Edu.</h1>
+              <p>2022.09 ~ | 엘리스 SW엔지니어 3기 수강 중</p>
+              <p>
+                2021.05 ~ 2022.06 | (주)허블 Alliance Manager<br />담당업무)
+                Android App 광고 신규 제휴 발굴 및 관리
+              </p>
+              <p>2014.03 ~ 2021.02 | 세명대학교 (무역학, 회계학 전공)</p>
+            </div>
+            <div class="infoShow_area">
+              <h1>🎊 Assessment</h1>
+              <div>지시안 : 와 성격 너무 좋아요👍</div>
+              <div>오선아 : 와 성격 너무 좋아요👍</div>
+              <div>허지윤 : 와 성격 너무 좋아요👍</div>
+              <div>손형석 : 와 성격 너무 좋아요👍</div>
+              <div>지창준 : 와 성격 너무 좋아요👍</div>
+              <div>허혜실 : 와 성격 너무 좋아요👍</div>
+            </div>
+          </div>
         </section>
-      </article>
-      <article id="information">
-        <!-- 인적사항 -->
-        <section id="info">
-          <h3>👨‍💻 인적사항</h3>
-          <p><strong>생년월일:</strong> 1994 .02 .16</p>
-          <p><strong>주소:</strong> 경기도 성남시 분당구 수내동 107-3</p>
-          <p><strong>e-mail:</strong> dnchks08@gmail.com</p>
-          <p><strong>연락처:</strong> +82-10-4939-0237</p>
+        <section id="project_area" class="scroll">
+          <h1>🧾 Project</h1>
+          <div class="project_list">
+            <div class="project_items">
+              <div class="project_explain">
+                <h3>1. 웹 자판기 <a href="">- Click!</a></h3>
+                <div class="project_stack">
+                  <img
+                    src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                  />
+                </div>
+                <span>- 미니(toy) 프로젝트</span><br />
+                <span>- 반응형 웹</span><br />
+                <span>- DOM - Render Tree에 대한 이해</span><br />
+              </div>
+              <div class="project_picture">
+                <img src="./image/Vm_web.jpg" />
+              </div>
+            </div>
+            <div class="project_items">
+              <div class="project_explain">
+                <h3>2. Pilly 웹 클론 코딩 <a href="">- Click!</a></h3>
+                <div class="project_stack">
+                  <img
+                    src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                  />
+
+                  <img
+                    src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                  />
+
+                  <img
+                    src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"
+                  />
+                </div>
+                <span>- 협업 프로젝트</span><br />
+                <span>- MainPage 담당</span><br />
+                <span>- 각종 Hooks 경험 (useState, useEffect 등)</span><br />
+                <span>- SPA에 대한 이해 및 구현</span><br />
+                <span>- Browser Route에 대한 이해</span><br />
+              </div>
+              <div class="project_picture">
+                <img src="./image/pilly.jpg" />
+              </div>
+            </div>
+          </div>
         </section>
-        <!-- 학력사항 -->
-        <section id="grade">
-          <h3>🎓 학력 & 경력 사항</h3>
-          <p>2022.09 ~ | 엘리스 SW엔지니어 3기 수강 중</p>
-          <p>2021.05 ~ 2022.06 | (주)허블 Alliance Manager</p>
-          <p>2014.03 ~ 2021.02 | 세명대학교 (무역학, 회계학 전공)</p>
-        </section>
-        <!-- 프로젝트 -->
-        <section id="project">
-          <h3>🧾 프로젝트</h3>
-          <p>1. 자판기 <a href="">- Here!</a></p>
-          <span>- 미니(toy) 프로젝트</span><br />
-          <span>- 반응형 웹</span><br />
-          <span>- DOM, CSSOM 요소 학습</span><br />
-          <p>2. Pilly 클론코딩 <a href="">- Here!</a></p>
-          <span>- 협업 프로젝트</span><br />
-          <span>- React 라이브러리 이용 (Hooks 경험)</span><br />
-          <span>- MainPage 담당</span><br />
-        </section>
-        <!-- 보유 스킬 -->
-        <section id="skills">
-          <h3>🚀 보유 스킬</h3>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Javascript ES6</li>
-            <li>React.js</li>
-          </ul>
-        </section>
-      </article>
-    </main>
-    <footer id="footer">
-      <p class="author">Author by Croossh</p>
-      <p class="copyright">Copyright ⓒ 2021 - 2022 잇힝♥</p>
-    </footer>
+      </main>
+      <footer id="footer">
+        <p class="author">Author by Croossh</p>
+        <p class="copyright">Copyright ⓒ 2021 - 2022 잇힝♥</p>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>
